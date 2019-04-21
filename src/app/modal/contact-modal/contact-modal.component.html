@@ -1,0 +1,61 @@
+<div class="sample-container">
+  <div class="block">
+    <button type="button" class="closeModal" (click)="close()" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="block">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet scelerisque diam. Curabitur id justo augue.
+    Praesent ultrices tellus a massa interdum, sed mattis nisi varius. Suspendisse ac ipsum vehicula, fringilla ligula
+    ut, pharetra elit. Etiam volutpat sem quis consequat convallis. Etiam sed imperdiet dolor. Integer in pharetra dui.
+    Donec ut arcu dictum, tempus ex sed, ullamcorper dui. Vestibulum aliquet risus id diam placerat, vel laoreet odio
+  </div>
+  <form class="block contactForm" [formGroup]="contactForm" (ngSubmit)="onFormSubmit()">
+    <div>
+      <label for="name">Nom</label>
+      <input id="name" type="text" formControlName="name">
+      <span class="error" *ngIf="!contactForm.get('name').valid && contactForm.get('name').touched">
+        <span class="error" *ngIf="contactForm.get('name').errors['required']">
+          Veuillez renseigner votre nom
+        </span>
+        <span
+          *ngIf="contactForm.get('name').errors['dataIsForbidden']||contactForm.get('name').errors['integerPresence']">
+          Veuillez renseigner un nom valide
+        </span>
+      </span>
+    </div>
+    <div>
+      <label for="firstName">Prénom</label>
+      <input id="firstName" type="text" formControlName="firstName">
+      <span class="error" *ngIf="!contactForm.get('firstName').valid && contactForm.get('firstName').touched">
+        <span class="error" *ngIf="contactForm.get('firstName').errors['required']">
+          Veuillez renseigner votre prénom
+        </span>
+        <span class="error"
+          *ngIf="contactForm.get('firstName').errors['dataIsForbidden']||contactForm.get('firstName').errors['integerPresence']">
+          Veuillez renseigner un prénom valide
+        </span>
+      </span>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email">
+      <span class="error" *ngIf="!contactForm.get('email').valid && contactForm.get('email').touched">
+        Veuillez renseigner un email valide
+      </span>
+    </div>
+    <div>
+      <label for="telephone">Téléphone</label>
+      <input id="telephone" type="tel" formControlName="telephone">
+      <span *ngIf="!contactForm.get('telephone').valid && contactForm.get('telephone').touched">
+        <span *ngIf="contactForm.get('telephone').errors['pattern']">
+          Veuillez renseigner un numéro valide
+        </span>
+      </span>
+    </div>
+    <div>
+      <span></span>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>

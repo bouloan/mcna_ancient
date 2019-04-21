@@ -1,0 +1,42 @@
+{
+  "language": "中文",
+  "menu": {
+    "home": "主页",
+    "presentation": "介绍",
+    "activity": "活动",
+    "contact": "联系"
+  },
+  "activity": [{
+      "title": "中文课",
+      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
+      "place": "波尔多",
+      "level": "Tous niveaux",
+      "date": "Tous les samedis: 14h00-15h30 / 16h00-17h30",
+      "beginningDate": "A partir du samedi 7 octobre"
+    },
+    {
+      "title": "法语课",
+      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
+      "place": "波尔多",
+      "level": "Tous niveaux",
+      "date": "Tous les samedis: 14h00-15h30 / 16h00-17h30",
+      "beginningDate": "A partir du samedi 7 octobre"
+    },
+    {
+      "title": "Cours à la demande",
+      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
+      "place": "波尔多",
+      "level": "Lorem ipsum dolor sit amet maxim",
+      "date": "Lorem ipsum dolor sit amet maxime dolorum laudantium magnam",
+      "beginningDate": "Lorem ipsum dolor sit amet maxime dolorum laudantium magnam"
+    },
+    {
+      "title": "Prestations d'interpétariat",
+      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
+      "place": "波尔多",
+      "level": "",
+      "date": "",
+      "beginningDate": ""
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.logo {
+  flex: initial;
+
+  img {
+    width: 9rem;
+  }
+}
+
+nav {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+
+  app-primary-menu {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  app-secondary-menu {
+    flex: initial;
+  }
+
+}

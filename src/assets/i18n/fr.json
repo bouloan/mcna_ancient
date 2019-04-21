@@ -1,0 +1,42 @@
+{
+  "language": "Français",
+  "menu": {
+    "home": "Accueil",
+    "presentation": "Présentation",
+    "activity": "Activités",
+    "contact": "Contact"
+  },
+  "activity": [{
+      "title": "Cours de chinois",
+      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
+      "place": "Bordeaux",
+      "level": "Tous niveaux",
+      "date": "Tous les samedis: 14h00-15h30 / 16h00-17h30",
+      "beginningDate": "A partir du samedi 7 octobre"
+    },
+    {
+      "title": "Cours de francais",
+      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
+      "place": "Bordeaux",
+      "level": "Tous niveaux",
+      "date": "Tous les samedis: 14h00-15h30 / 16h00-17h30",
+      "beginningDate": "A partir du samedi 7 octobre"
+    },
+    {
+      "title": "Cours à la demande",
+      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
+      "place": "Bordeaux",
+      "level": "Lorem ipsum dolor sit amet maxim",
+      "date": "Lorem ipsum dolor sit amet maxime dolorum laudantium magnam",
+      "beginningDate": "Lorem ipsum dolor sit amet maxime dolorum laudantium magnam"
+    },
+    {
+      "title": "Prestations d'interpétariat",
+      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
+      "place": "Bordeaux",
+      "level": "dolorum laudantium magna",
+      "date": "dolorum laudantium magna",
+      "beginningDate": "dolorum laudantium magna"
+    }
+  ]
+}

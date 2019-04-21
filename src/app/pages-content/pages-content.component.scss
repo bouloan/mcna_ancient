@@ -1,0 +1,12 @@
+app-header {
+  flex: initial
+}
+
+main {
+  flex: auto;
+
+  app-carousel {
+    height: calc(100vh - 6rem);
+  }
+
+}

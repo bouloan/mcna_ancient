@@ -1,0 +1,6 @@
+<ngb-carousel [showNavigationArrows]=false [interval]=1000 [pauseOnHover]=false>
+  <ng-template *ngFor="let activity of activitiesList, let i = index" ngbSlide>
+    <app-activity-item [activity]="activity" [index]="i">
+    </app-activity-item>
+  </ng-template>
+</ngb-carousel>
