@@ -1,0 +1,8 @@
+@import "../../../../assets/scss/variables.scss";
+
+button {
+  &.select {
+    background-color: $color-brown;
+    border-color: $color-brown;
+  }
+}

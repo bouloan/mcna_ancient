@@ -3,40 +3,96 @@
   "menu": {
     "home": "主页",
     "presentation": "介绍",
-    "activity": "活动",
-    "contact": "联系"
+    "courses": "课文",
+    "interpreting": "口译",
+    "contact": "联系",
+    "prices": "价格"
   },
-  "activity": [{
+  "button": {
+    "contact": "联系",
+    "know-more": "更多",
+    "register": "预约"
+  },
+  "pages-titles": {
+    "courses": "课文",
+    "interpreting": "口译"
+  },
+  "activities": [{
+      "type": "course",
       "title": "中文课",
-      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
-      "place": "波尔多",
-      "level": "Tous niveaux",
-      "date": "Tous les samedis: 14h00-15h30 / 16h00-17h30",
-      "beginningDate": "A partir du samedi 7 octobre"
+      "resume": "为适应中文学员的不同需求，新阿基坦中法协会推出面向成人和青少年的汉语课程，通过汉语拼音、字词短语以及中国表达习惯的讲解与练习，通过互动的方式，学员们可在短期内学会中文会话。",
+      "content": "<p>为适应中文学员的不同需求，新阿基坦中法协会推出面向成人和青少年的汉语课程，通过汉语拼音、字词短语以及中国表达习惯的讲解与练习，通过互动的方式，学员们可在短期内学会中文会话。</p><p>根据学员水平， 从初级、 中级直至HSK高级水平考试，我们设置不同水平的课程。</p> ",
+      "place": "地址: Centre Social et Culturel, Le Puzzle, Rue Jean Giono, 33700 Mérignac",
+      "level": "各级水平",
+      "date": "每周六  14:00-15:00 (2019年9月28日-2020年6月27日，节假日除外)",
+      "beginningDate": ""
     },
     {
+      "type": "course",
       "title": "法语课",
-      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
-      "place": "波尔多",
-      "level": "Tous niveaux",
-      "date": "Tous les samedis: 14h00-15h30 / 16h00-17h30",
-      "beginningDate": "A partir du samedi 7 octobre"
+      "resume": "基于不同的需求，新阿基坦中法协会推出面向中国成人和青少年的法语课。",
+      "content": "<p>法语课从零基础开始，循序渐进地学习口语与语法，最终能够看懂常用信件，帮助在法华人迅速融入当地生活。</p><p>课程以小班形式进行， 根据各人时间与实际水平，定制个人学习计划(申请居留证所需的法语水平、 驾照课、 餐饮与 美容等服务用语)。</p>",
+      "place": "地址: Centre Social et Culturel, Le Puzzle, Rue Jean Giono, 33700 Mérignac",
+      "level": "各级水平",
+      "date": "每周六 16:10-18:00 (2019年9月28日-2020年6月27日，节假日除外)",
+      "beginningDate": ""
     },
+
     {
-      "title": "Cours à la demande",
-      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
-      "place": "波尔多",
-      "level": "Lorem ipsum dolor sit amet maxim",
-      "date": "Lorem ipsum dolor sit amet maxime dolorum laudantium magnam",
-      "beginningDate": "Lorem ipsum dolor sit amet maxime dolorum laudantium magnam"
-    },
-    {
-      "title": "Prestations d'interpétariat",
-      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
-      "place": "波尔多",
+      "type": "interpreting",
+      "title": "中法口译服务",
+      "resume": "我们的译员为您对法语困难解除后顾之忧，助您在法国的生活沟通无障碍。您的需求就是我们的服务，我们的协会就是您的好帮手。",
+      "content": "我们的译员为您对法语困难解除后顾之忧，助您在法国的生活沟通无障碍。您的需求就是我们的服务，我们的协会就是您的好帮手。<ul><li>学校语言服务（ 学校会议、 儿童接送等）</li><li>医疗语言服务（ 帮助预约就诊， 有效减少医院误诊率、 有益于缩短病人住院时间， 消除产妇沟通障碍等） </li><li> 驾照语言服务（ 申请驾校， 备考习题口译） </li><li> 法庭聆讯服务（ 有助于减少案件延误， 加速案件处理进程。） </li><li> 警局语言服务（ 提供报案、 警局口译服务） </li><li>申请福利（ 提供办理手续， 翻译信件等服务） </li><li> 签证申请 </li><li> 租房纠纷（ 与政府机构沟通服务） </li><li> 手机服务（ 开卡、 购买套餐服务） </li><li> 网络安装口语服务 </li><li> 银行开户服务 </li><li> 个人口译服务需求 </li></ul>",
+      "place": "",
       "level": "",
       "date": "",
       "beginningDate": ""
     }
-  ]
+  ],
+  "presentation": {
+    "title": "关于我们",
+    "content": "<p>新阿基坦中法协会于2019 年4月创立， 是符合《 1901 年协会法》 的非盈利组织。</p><p>协会的宗旨是为波尔多华人提供法语口译服务和中法语言课程， 不但帮助华人尽快融入法国社会， 同时也让法国人通过我们的协会更好地了解中国文化， 为中法文化交流提供一个平台。</p><p>我们的服务如下：</p><ul><li>语言课与中国文化活动<ul><li>汉语课(包括学生补课，成人HSK考试辅助)</li><li>法语课(包括A1、A2水平课、驾照辅助课等)</li><li>中国文化兴趣活动和讲习班</li></ul></li><li>中法口译服务</li></ul>"
+  },
+  "prices": {
+    "title": "价目表 2019-2020",
+    "registration-fees": "注册费: 15€",
+    "table": {
+      "tr1": {
+        "th1": "汉语课",
+        "th2": ""
+      },
+      "tr2": {
+        "td1": "各级水平(每周六14点-15点)",
+        "td2": "8€/小时",
+        "td3": "1年: 300€"
+      },
+      "tr3": {
+        "td1": "中文补习班 (时间可定制)",
+        "td2": "15€/小时"
+      },
+      "tr4": {
+        "td1": "HSK(汉语水平考试), HSK是获得中国政府认证和授权的中文考试 (时间可定制)",
+        "td2": "25€/小时"
+      },
+      "tr5": {
+        "th1": "中国文化活动",
+        "th2": "每月(4小时)",
+        "th3": "每年"
+      },
+      "tr6": {
+        "td1": "国画，书法 (每周六15点10-16点)",
+        "td2": "30€",
+        "td3": "280€"
+      },
+      "tr7": {
+        "td1": "中国传统舞蹈 (每周六16点-18点)",
+        "td2": "30€",
+        "td3": "280€"
+      },
+      "tr8": {
+        "td1": "折纸艺术 (时间可定制)",
+        "td2": "37€/小时, 至少5人成班"
+      }
+    }
+  }
 }

@@ -1,21 +1,35 @@
 {
   "compileOnSave": false,
+  "angularCompilerOptions": {
+    "preserveWhitespaces": false
+  },
   "compilerOptions": {
     "baseUrl": "./",
+    "downlevelIteration": true,
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "module": "es2015",
+    "module": "esnext",
+
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "es2015",
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@services/*": ["./src/app/shared/services/*"],
+      "@models/*": ["./src/app/shared/models/*"],
+      "@custom-pipes/*": ["./src/app/shared/custom-pipes/*"],
+      "@assets/*": ["./src/assets"],
+      "@modal/*": ["./src/app/shared/modal/*"],
+      "@parameters/*": ["./src/app/parameters/*"],
+      "@components/*": ["./src/app/shared/components/*"]
+    }
   }
 }

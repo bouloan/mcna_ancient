@@ -1,0 +1,7 @@
+<section class="courses">
+  <h1>{{'pages-titles.courses' | translate}}</h1>
+  <ng-container *ngFor="let course of coursesList, let i = index">
+    <app-service-item [activity]="course" [index]="i" [image]="imagesList[i]">
+    </app-service-item>
+  </ng-container>
+</section>

@@ -1,0 +1,10 @@
+<header>
+  <div (click)="onOpenMobileMenu()">
+    <p class="box-shadow-menu"></p>
+  </div>
+  <div>
+    <h1 *ngIf="deviceFormat === 'md' || deviceFormat === 'sm'">MCNA</h1>
+    <h1 *ngIf="deviceFormat !== 'md'  && deviceFormat !== 'sm'">Maison Chine Nouvelle-Aquitaine</h1>
+  </div>
+  <app-language-selector *ngIf="deviceFormat !== 'md'  && deviceFormat !== 'sm'"></app-language-selector>
+</header>

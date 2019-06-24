@@ -1,0 +1,26 @@
+<div id="activity{{index}}">
+  <div class="carousel-caption">
+    <div>
+      <h1>{{ activity.title}}</h1>
+      <p [innerHTML]="activity.resume"></p>
+      <div>
+        <button *ngIf="activity.type ==='course'" [routerLink]="['/courses']"
+          fragment="{{activity.title | removeWhiteSpace |lowercase}}">{{'button.know-more' | translate}}</button>
+        <button *ngIf="activity.type ==='interpreting'" [routerLink]="['/interpretings']"
+          fragment="{{activity.title | removeWhiteSpace |lowercase}}">{{'button.know-more' | translate}}</button>
+        <a class="button"
+          href="mailto: mcna.aquitaine@gmail.com?subject=Demande%20d'inscription">{{'button.register' | translate}}</a>
+      </div>
+    </div>
+    <div></div>
+    <div *ngIf="activity.place">
+      <h2 [innerHTML]="activity.place" *ngIf="activity.place"></h2>
+      <div>
+        <p [innerHTML]=" activity.level" *ngIf="activity.level">
+        </p>
+        <p [innerHTML]="activity.date" *ngIf="activity.date"></p>
+      </div>
+      <p [innerHTML]="activity.beginningDate" *ngIf="activity.beginningDate"></p>
+    </div>
+  </div>
+</div>

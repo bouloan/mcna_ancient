@@ -1,0 +1,8 @@
+<section class="interpretings">
+  <h1>{{'pages-titles.interpreting' | translate}}</h1>
+
+  <ng-container *ngFor="let interpreting of interpretingList, let i = index">
+    <app-service-item [activity]="interpreting" [index]="i" [image]="imagesList[i]">
+    </app-service-item>
+  </ng-container>
+</section>

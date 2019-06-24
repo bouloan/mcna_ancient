@@ -1,0 +1,20 @@
+<article>
+  <div class="activityItem darkBackground" [ngStyle]="styleImage()">
+    <h2 id="{{ activity.title | lowercase | removeWhiteSpace }}">{{ activity.title }}</h2>
+    <div>
+      <div [innerHTML]="activity.content"></div>
+      <div>
+        <a class="button" href="mailto: mcna.aquitaine@gmail.com?subject=Demande%20d'inscription">{{
+          'button.register' | translate
+        }}</a>
+      </div>
+    </div>
+    <div>
+      <div *ngIf="activity.place">
+        <p [innerHTML]="activity.place" *ngIf="activity.place"></p>
+        <p [innerHTML]="activity.date" *ngIf="activity.date"></p>
+        <p [innerHTML]="activity.beginningDate" *ngIf="activity.beginningDate"></p>
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,43 @@
+  @import "../../../assets/scss/styles.scss";
+  @import "../../../assets/scss/variables.scss";
+
+  #prices {
+    @include minHeightPage;
+    @include padding;
+    @include blackOverlay("../../../assets/images/prices/price.jpg");
+
+    article {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h1 {
+        @include middleTittle;
+      }
+
+      h1,
+      p {
+        position: relative;
+        color: $color-pale;
+        z-index: 2;
+      }
+
+      table {
+        position: relative;
+        color: $color-pale;
+        z-index: 2;
+        width: 100% - padding;
+
+        th,
+        td {
+          border: 1px solid $color-pale;
+          border-collapse: collapse;
+          padding: 5px;
+          text-align: left;
+          min-width: 110px;
+
+        }
+      }
+    }
+
+
+  }

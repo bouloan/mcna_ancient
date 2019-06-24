@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "./variables.scss";
+
+@mixin margin {
+  margin: 0.5rem;
+}
+
+@mixin padding {
+  padding: 1rem;
+}
+
+@mixin verticalPadding {
+  padding: 1rem 0;
+}
+
+@mixin minHeightPage {
+  min-height: calc(100vh - 7rem);
+}
+
+@mixin blackOverlay($imagePath) {
+  background: black;
+  position: relative;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url($imagePath);
+    background-size: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.6;
+
+    z-index: 1;
+  }
+}
+
+@mixin middleTittle {
+  @include verticalPadding;
+  text-align: center;
+}
+
+* {
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+app-header {
+  flex: initial
+}
+
+main {
+  flex: auto;
+  background-color: #fff;
+
+  .darkBackground {
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+  }
+
+}
+
+body,
+head {
+  font-family: 'Lato',
+    sans-serif;
+  color: $color-dark-grey;
+  background-color: $color-dark-blue;
+  height: 100%;
+
+
+
+  article {
+
+    margin: 0 auto;
+  }
+
+
+}
+
+.closeModal {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 1px 0 #fff;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.closeModal:hover {
+  color: $color-grey-blue !important;
+  opacity: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Libre Baskerville',
+    serif;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+
+button,
+.button {
+  background-color: $color-grey-blue;
+  border: $color-grey-blue 1px solid;
+  color: $color-dark-grey;
+  padding: 5px 6px;
+  margin: 0 10px;
+  border-radius: 3px;
+  transition: 0.4s;
+  min-width: 80px;
+  text-align: center;
+}
+
+button:active,
+button:hover,
+.button:active,
+.button:hover {
+  background-color: $color-dark-grey;
+  border: $color-grey-blue 1px solid;
+  color: $color-grey-blue;
+  text-decoration: none;
+}

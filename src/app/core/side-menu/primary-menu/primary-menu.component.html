@@ -1,0 +1,12 @@
+<ul (click)="onCloseMenu()">
+  <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}">{{ 'menu.home' | translate}}</a></li>
+  <li><a routerLink="/team-presentation" routerLinkActive="active">{{ 'menu.presentation' | translate}}</a></li>
+  <li><a routerLink="/courses" routerLinkActive="active">{{ 'menu.courses' | translate}}</a></li>
+  <li><a routerLink="/interpretings" routerLinkActive="active">{{ 'menu.interpreting' | translate}}</a></li>
+  <li><a routerLink="/prices" routerLinkActive="active">{{ 'menu.prices' | translate}}</a></li>
+  <li><a href="mailto: mcna.aquitaine@gmail.com?subject=Demande%20d'inscription">{{ 'menu.contact' | translate}}</a>
+  </li>
+  <!-- <li (click)='initContactModal()'>{{ 'menu.contact' | translate}}</li> -->
+  <!--   <li><a [routerLink]="['/back-office']">back-office</a></li> -->
+</ul>

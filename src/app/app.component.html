@@ -1,5 +1,18 @@
-<app-side-menu></app-side-menu>
-<app-pages-content></app-pages-content>
+<div (window:resize)="onResize()" id="siteContent">
+  <div id="sideMenu" *ngIf="deviceFormat === 'md'  || deviceFormat === 'sm'">
+    <app-side-menu [@openClose]="!sideMenuService.menuStatus ? 'closeMenu' : 'openMenu'"
+      style="transition: margin-left 0.3s">
+    </app-side-menu>
+    <div id="sideMenuOverlay" (click)="onCloseSideMenu()"
+      [@openClose]="!sideMenuService.menuStatus ? 'dontPushOverlay' : 'pushOverlay'"
+      style="transition: margin-left 0.3s"></div>
+  </div>
+
+  <app-side-menu *ngIf="deviceFormat !== 'md'  && deviceFormat !== 'sm'">
+  </app-side-menu>
+
+  <app-pages-content></app-pages-content>
+</div>
 
 <!-- Custom modal setup -->
 <div id="modal-container" class="hidden"></div>

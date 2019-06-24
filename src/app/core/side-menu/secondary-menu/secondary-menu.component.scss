@@ -1,0 +1,7 @@
+@import "../side-menu.component.scss";
+
+@include menuList;
+
+li {
+  font-size: 1rem;
+}

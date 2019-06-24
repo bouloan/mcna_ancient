@@ -1,0 +1,25 @@
+@import "../../../assets/scss/styles.scss";
+
+.courses {
+  padding: 1rem;
+  min-height: calc(100vh - 10rem);
+
+  h1 {
+    @include middleTittle;
+  }
+
+  .vignetteItem {
+    a {
+
+      span::before,
+      span::after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        height: 1px;
+        content: "";
+        background-color: #cdcbc9;
+      }
+    }
+  }
+}

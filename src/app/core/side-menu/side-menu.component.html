@@ -1,0 +1,13 @@
+<div class="logo">
+  <a [routerLink]="['/']">
+    <img src="../../assets/images/logo.png
+    " alt="logo">
+  </a>
+  <mat-icon id="closeMenuButton" (click)="onCloseMobileMenu()" style="font-size: 3rem !important">clear</mat-icon>
+
+</div>
+<nav>
+  <!--  <app-language-selector *ngIf="deviceFormat === 'md'  || deviceFormat === 'sm'"></app-language-selector> -->
+  <app-primary-menu></app-primary-menu>
+  <app-secondary-menu></app-secondary-menu>
+</nav>

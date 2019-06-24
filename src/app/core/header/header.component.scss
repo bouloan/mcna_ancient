@@ -1,0 +1,71 @@
+@import "../../../assets/scss/variables.scss";
+
+header {
+  // height: 5rem;
+  display: flex;
+  padding: 15px 15px;
+
+  >div:nth-child(1) {
+
+    width: 2rem;
+
+    .box-shadow-menu {
+      height: 4rem;
+      position: relative;
+    }
+
+    .box-shadow-menu:before {
+      content: "";
+      position: absolute;
+      width: 2rem;
+      top: 0.5rem;
+      height: 0.25rem;
+      background: $color-dark-grey;
+      box-shadow:
+        0 0.75rem 0 0 $color-dark-grey,
+        0 1.5rem 0 0 $color-dark-grey;
+    }
+  }
+
+  >div:nth-child(2) {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 2rem;
+      text-align: right;
+      margin: 0px;
+    }
+  }
+
+  app-language-selector {
+    min-width: 8rem;
+
+  }
+
+}
+
+@media screen and (min-width: $break-middle) {
+
+  header {
+    height: 7rem;
+    padding: 0 30px;
+    align-items: center;
+
+    >div:nth-child(1) {
+      display: none;
+    }
+
+    >div:nth-child(2) {
+      padding-right: 30px;
+
+      h1 {
+        font-size: 2rem;
+        text-align: left;
+        margin: 0px;
+      }
+    }
+  }
+}

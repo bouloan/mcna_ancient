@@ -1,0 +1,42 @@
+<div class="sample-container">
+  <div class="block">
+    <button type="button" class="closeModal" (click)="close()" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="block">
+    <h1>Identification</h1>
+  </div>
+  <form class="block loginForm" [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email">
+      <span class="error" *ngIf="!loginForm.get('email').valid && loginForm.get('email').touched">
+        <span class="error" *ngIf="loginForm.get('email').errors['required']">
+          Veuillez renseigner votre email
+        </span>
+        <span class="error" *ngIf="!loginForm.get('email').valid && loginForm.get('email').touched">
+          Veuillez renseigner un email valide
+        </span>
+      </span>
+    </div>
+    <div>
+      <label for="password">Mot de passe</label>
+      <input id="password" type="password" formControlName="password">
+      <span class="error" *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched">
+        <span class="error" *ngIf="loginForm.get('password').errors['required']">
+          Veuillez renseigner votre mot de passe
+        </span>
+        <!--    <span class="error"
+          *ngIf="loginForm.get('firstName').errors['dataIsForbidden']||loginForm.get('firstName').errors['integerPresence']">
+          Veuillez renseigner un prénom valide
+        </span> -->
+      </span>
+    </div>
+
+    <div>
+      <span></span>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>

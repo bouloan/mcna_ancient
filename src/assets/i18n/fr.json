@@ -3,40 +3,96 @@
   "menu": {
     "home": "Accueil",
     "presentation": "Présentation",
-    "activity": "Activités",
-    "contact": "Contact"
+    "courses": "Cours",
+    "interpreting": "Interprétariat",
+    "contact": "Contact",
+    "prices": "Prix"
   },
-  "activity": [{
+  "button": {
+    "contact": "Contact",
+    "know-more": "En savoir plus",
+    "register": "Je m'inscris"
+  },
+  "pages-titles": {
+    "courses": "Cours",
+    "interpreting": "Interprétariat"
+  },
+  "activities": [{
+      "type": "course",
       "title": "Cours de chinois",
-      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
-      "place": "Bordeaux",
+      "resume": "Pour répondre aux besoins des étudiants chinois, la MCNA propose des cours de chinois aux adultes et adolescents francophones, à travers l'explication et la pratique du pinyin (phonétique), de la formation des phrases et des expressions courantes chinoises.",
+      "content": "<p>Pour répondre aux besoins des étudiants chinois, la MCNA propose des cours de chinois aux adultes et adolescents francophones, à travers l'explication et la pratique du pinyin (phonétique), de la formation des phrases et des expressions courantes chinoises. Grace à nos pratiques interactives, les apprenants pourront très vite faire des conversations en chinois dans peu de temps.</p><p>Selon le niveau de chacun, nous pouvons élaborer des programmes personnalisés, du débutant, intermédiaire jusqu’au HSK de niveau avancé.</p> ",
+      "place": "Adresse: Centre Social et Culturel, Le Puzzle, Rue Jean Giono, 33700 Mérignac",
+      "level": "Tous niveaux ",
+      "date": "Tous les samedis de 14h00 à 15h00 (du 28 septembre 2019 au 27 juin 2020, hors jours fériés)",
+      "beginningDate": ""
+    },
+    {
+      "type": "course",
+      "title": "Cours de français",
+      "resume": "Suivant le besoin de chacun, MCNA propose des cours de Français pour adultes et adolescents chinois.",
+      "content": "<p>Suivant le besoin de chacun, MCNA propose des cours de Français pour adultes et adolescents chinois.</p><p>Départ du niveau zéro, les apprenants chinois aurons des cours oraux et en grammaire étape par étape, et finir par pouvoir lire des courriers courants. Cela est pour aider les chinois en France à s'intégrer rapidement dans la vie locale.</p>",
+      "place": "Adresse: Centre Social et Culturel, Le Puzzle, Rue Jean Giono, 33700 Mérignac",
       "level": "Tous niveaux",
-      "date": "Tous les samedis: 14h00-15h30 / 16h00-17h30",
-      "beginningDate": "A partir du samedi 7 octobre"
+      "date": "Tous les samedis de 16h10 à 18h00 (du 28 septembre 2019 au 27 juin 2020, hors jours fériés)",
+      "beginningDate": ""
     },
+
     {
-      "title": "Cours de francais",
-      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
-      "place": "Bordeaux",
-      "level": "Tous niveaux",
-      "date": "Tous les samedis: 14h00-15h30 / 16h00-17h30",
-      "beginningDate": "A partir du samedi 7 octobre"
-    },
-    {
-      "title": "Cours à la demande",
-      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
-      "place": "Bordeaux",
-      "level": "Lorem ipsum dolor sit amet maxim",
-      "date": "Lorem ipsum dolor sit amet maxime dolorum laudantium magnam",
-      "beginningDate": "Lorem ipsum dolor sit amet maxime dolorum laudantium magnam"
-    },
-    {
-      "title": "Prestations d'interpétariat",
-      "briefDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita maxime dolorum laudantium magnam beatae cupiditate, et odit totam commodi ? Nisi eligendi nemo repudiandae eaque fugiat ullam vitae neque ?Dicta.",
-      "place": "Bordeaux",
-      "level": "dolorum laudantium magna",
-      "date": "dolorum laudantium magna",
-      "beginningDate": "dolorum laudantium magna"
+      "type": "interpreting",
+      "title": "Services d'interprétariat",
+      "resume": "Nos interprètes vous aident à soulager vos soucis au niveau de la langue française et vous assistent pour communication sans entrave avec les organisations locales. Vos besoins sont nos services, notre association est toujours à côté de vous.",
+      "content": "<p>Nos interprètes vous aident à soulager vos soucis au niveau de la langue française et vous assistent pour une vie en douceur en France par nos communications sans entrave avec les organisations locales. Vos besoins sont nos services, notre association est toujours à côté de vous.</p><ul><li>services linguistiques scolaires (visites/réunions scolaires, changement d’école pour les enfants, etc.)</li><li>services de langage médical (aider à prendre des rendez-vous, réduire efficacement les diagnostics erronés dû au délai du temps, réduire le temps de séjour à l’hôpital, éliminer les obstacles à la communication maternelle, etc.)</li><li>services linguistiques pour l’obtention du permis de conduire (faire la demande à l'école de conduite, interprétation pendant les préparations aux tests) </li><li>services d'audience du tribunal (aider à réduire les délais de traitement des cas et aider à accélérer le processus de traitement des affaires).</li><li>services linguistiques de la police (aider à contacter commissariat de police, et y fournir les services d'interprétariat)</li><li>demande d’aide sociale (services des formalités, traduction des courriers, etc.)</li><li>demandes de visa</li><li>conflits locatifs (services de communication avec les agences et les organismes concernés)</li><li>service mobile (ouverture de compte, service d’achat forfaitaire)</li><li>interprétariat à distance via internet</li><li>services d'ouverture de compte bancaire</li><li>services d'interprétariat particulier</li></ul>",
+      "place": "",
+      "level": "",
+      "date": "",
+      "beginningDate": ""
     }
-  ]
+  ],
+  "presentation": {
+    "title": "Qui sommes-nous?",
+    "content": "<p>Créée en avril 2019, Maison Chine Nouvelle-Aquitaine (MCNA) est une association à but non lucratif qui se conforme à la Loi d'Associations de 1901.</p><p>MCNA se donne comme objectifs de fournir ses services d’interprétariat aux chinois résidant dans la région Nouvelle Aquitaine, et d’apprendre le français aux sinophones et le chinois aux francophones. Il est non seulement pour aider les chinois à s'intégrer à la société française, mais aussi pour permettre aux français de mieux comprendre la culture chinoise à travers nos activités afin d’établir une plate-forme pour les échanges culturels entre la Chine et la France.</p><p>Nos services sont les suivants :</p><ul><li>Cours de langues et activités liées<ul><li>Cours de chinois (y compris la mise en niveaux scolaires, l'aide à l'examen HSK pour les adultes)</li><li>Cours de français (y compris niveau A1 et A2, assistance pour l’obtention du permis de conduire, etc.)</li><li>Atelier d’activités culturelles chinoises</li></ul></li><li>Services d'interprétation Chinois-Français</li></ul>"
+  },
+  "prices": {
+    "title": "Tarifs 2019-2020",
+    "registration-fees": "Frais d'inscription: 15€",
+    "table": {
+      "tr1": {
+        "th1": "Cours de chinois",
+        "th2": ""
+      },
+      "tr2": {
+        "td1": "Débutant,tous niveaux(tous les samedis de 14 h à 15 h)",
+        "td2": "8€/h",
+        "td3": "1 an: 300€"
+      },
+      "tr3": {
+        "td1": "Mise à niveau scolaire français(horaires à la disposition des apprenants)",
+        "td2": "15€/h"
+      },
+      "tr4": {
+        "td1": "HSK (Hanyu Shuiping Kaoshi 汉语水平考试, test de compétence en chinois conçu sous l'autorité du Ministère de l'éducation chinois) (horaires à la disposition des apprenants et contenu des cours personnalisable)",
+        "td2": "25€/h"
+      },
+      "tr5": {
+        "th1": "Activités en atelier",
+        "th2": "Mois (4h)",
+        "th3": "Année"
+      },
+      "tr6": {
+        "td1": "Beaux-arts chinois, calligraphie avec pinceau (tous les samedis de 15h10 à 16h)",
+        "td2": "30€",
+        "td3": "280€"
+      },
+      "tr7": {
+        "td1": "Danse classique chinoise (tous les samedis de 16h à 18h)",
+        "td2": "30€",
+        "td3": "280€"
+      },
+      "tr8": {
+        "td1": "Origami (horaires libres)",
+        "td2": "37€/h, minimum 5 personnes"
+      }
+    }
+  }
 }

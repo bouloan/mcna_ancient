@@ -1,0 +1,94 @@
+@import "../../../assets/scss/variables.scss";
+
+@mixin menuList {
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+      padding: 1rem 0;
+      color: $color-dark-grey;
+      transition: 0.3s;
+      cursor: pointer;
+
+      a {
+        color: $color-dark-grey;
+        transition: 0.3s;
+
+        &.active {
+          color: $color-brown;
+        }
+      }
+
+      a:hover,
+      li:active {
+        color: $color-brown;
+        text-decoration: none;
+      }
+    }
+
+    li:hover,
+    li:active {
+      color: $color-brown;
+      text-decoration: none;
+    }
+  }
+}
+
+.logo {
+  flex: initial;
+  position: relative;
+
+  img {
+    width: 9rem;
+  }
+
+  #closeMenuButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.4rem !important;
+    height: 2.4rem !important;
+    width: 2.4rem !important;
+  }
+}
+
+nav {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  overflow-y: scroll;
+
+  app-language-selector {
+    margin: 2rem 0;
+  }
+
+
+
+  app-primary-menu {
+    flex: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  app-secondary-menu {
+    flex: initial;
+  }
+
+}
+
+@media screen and (min-width: $break-middle) {
+
+  .logo {
+    #closeMenuButton {
+      display: none;
+    }
+  }
+
+  nav {
+    overflow-y: hidden;
+  }
+}

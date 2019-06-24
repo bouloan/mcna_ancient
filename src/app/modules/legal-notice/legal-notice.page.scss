@@ -1,0 +1,26 @@
+@import "../../../assets/scss/styles.scss";
+@import "../../../assets/scss/variables.scss";
+
+#legalNotice {
+  @include minHeightPage;
+  @include padding;
+  @include blackOverlay("../../../assets/images/legalNotice/legalNotice.jpg");
+
+  h1,
+  h2,
+  p,
+  address {
+    position: relative;
+    z-index: 2;
+    color: $color-pale;
+  }
+
+  h1 {
+    @include middleTittle;
+  }
+
+  article {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
