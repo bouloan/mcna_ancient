@@ -1,4 +1,21 @@
 @import "../assets/scss/variables.scss";
+@import "../assets/scss/styles.scss";
+
+app-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: $color-dark-blue;
+  z-index: 3;
+}
+
+main {
+  @include minHeightPage;
+  flex: auto;
+  background-color: #fff;
+  margin-top: 7rem;
+}
 
 body {
   height: 100%;
@@ -27,21 +44,19 @@ body {
       top: 0;
       bottom: 0;
       z-index: 16;
-      /*   background-color: $color-dark-grey; */
       width: 35%;
-      /*  opacity: 0.8; */
       background: rgba(0, 0, 0, 0.8);
     }
+
+
   }
 
-
-
-  app-pages-content {
+  #page {
     padding-left: 0px;
-    width: 100%;
-    /*   overflow-y: scroll; */
+    flex: auto;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
   }
 
 
@@ -66,9 +81,6 @@ body {
   }
 }
 
-
-
-
 /* modal */
 
 .hidden {
@@ -79,10 +91,14 @@ body {
   display: block;
 }
 
-
 /* END modal */
+
 @media screen and (min-width: $break-middle) {
   #siteContent {
+    app-header {
+      left: 11rem;
+    }
+
     app-side-menu {
       position: fixed;
       height: 100vh;
@@ -92,8 +108,8 @@ body {
       padding: 1.1rem;
     }
 
-    app-pages-content {
-      padding-left: 11rem;
+    #page {
+      margin-left: 11rem;
     }
   }
 }

@@ -1,15 +1,17 @@
 {
   "extends": "../tslint.json",
   "rules": {
+    "quotemark": [
+      true,
+      "single"
+    ],
     "directive-selector": [
       true,
       "attribute",
       "app",
       "camelCase"
     ],
-    "indent": {
-      "options": ["spaces", 4]
-    },
+    "indent": false,
     "component-selector": [
       true,
       "element",

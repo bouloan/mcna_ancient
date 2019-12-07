@@ -11,7 +11,13 @@
   <app-side-menu *ngIf="deviceFormat !== 'md'  && deviceFormat !== 'sm'">
   </app-side-menu>
 
-  <app-pages-content></app-pages-content>
+  <div id="page">
+    <app-header></app-header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+
 </div>
 
 <!-- Custom modal setup -->

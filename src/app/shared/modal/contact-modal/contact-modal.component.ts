@@ -1,20 +1,20 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { apiUrl } from '@parameters/api-url';
-import { FormCheckingService } from '@services/forms/form-checking.service';
-import { ModalService } from '@services/modals/modal.service';
-import { Subject } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
+import { HttpClient } from "@angular/common/http";
+import { Component, OnDestroy, OnInit } from "@angular/core";
+import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { apiUrl } from "@parameters/api-url";
+import { FormCheckingService } from "@services/forms/form-checking.service";
+import { ModalService } from "@services/modals/modal.service";
+import { Subject } from "rxjs";
+import { takeUntil } from "rxjs/operators";
 
 @Component({
-  selector: 'app-contact-modal',
-  templateUrl: './contact-modal.component.html',
-  styleUrls: ['./contact-modal.component.scss']
+  selector: "app-contact-modal",
+  templateUrl: "./contact-modal.component.html",
+  styleUrls: ["./contact-modal.component.scss"]
 })
 export class ContactModalComponent implements OnInit, OnDestroy {
   contactForm: FormGroup;
-  invalidName: string[] = ['ss'];
+  invalidName: string[] = ["ss"];
 
   private _unsubscribe$: Subject<void>;
 
@@ -44,14 +44,17 @@ export class ContactModalComponent implements OnInit, OnDestroy {
       // tslint:disable-next-line: quotemark
       telephone: new FormControl(
         null,
-        Validators.pattern('^0[1-6]{1}(([0-9]{2}){4})|((s[0-9]{2}){4})|((-[0-9]{2}){4})$')
+        Validators.pattern(
+          "^0[1-6]{1}(([0-9]{2}){4})|((s[0-9]{2}){4})|((-[0-9]{2}){4})$"
+        )
       ),
       message: new FormControl(null, [Validators.required])
     });
 
-    this.contactForm.valueChanges
-      .pipe(takeUntil(this._unsubscribe$))
-      .subscribe(value => console.log(value), error => console.log(error));
+    this.contactForm.valueChanges.pipe(takeUntil(this._unsubscribe$)).subscribe(
+      value => console.log(value),
+      error => console.log(error)
+    );
   }
 
   public close() {
@@ -59,14 +62,13 @@ export class ContactModalComponent implements OnInit, OnDestroy {
   }
 
   public onFormSubmit() {
-    console.log(this.contactForm);
-    if (this.contactForm.status === 'VALID') {
+    if (this.contactForm.status === "VALID") {
       this._http
         .post<any>(`${apiUrl}contact-message`, this.contactForm.value)
         .pipe(takeUntil(this._unsubscribe$))
         .subscribe(
           res => {
-            console.log('message envoyé');
+            console.log("message envoyé");
           },
           err => {
             console.error(err);

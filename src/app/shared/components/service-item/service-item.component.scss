@@ -1,79 +1,86 @@
 @import "../../../../assets/scss/variables.scss";
 
-.activityItem {
-  margin: 40px auto 0px auto;
-  background-color: $color-dark-blue;
-  border-radius: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 1rem;
-  padding-top: 2rem;
+article {
+  position: relative;
 
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  div:nth-child(2) {
-    z-index: 2;
-    max-width: 700px;
-
-
-    div:first-child {
-      padding: 1rem;
-      margin-top: 20px;
-      color: white;
-    }
-
-    div:last-child {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-
-    }
-  }
-
-  div:nth-child(3) {
-    z-index: 2;
-    max-width: 700px;
-    flex: auto;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding: 0px 15px;
-
-    div:first-child {
-      border: white solid 1px;
-      border-radius: 3px;
-
-      p {
-        border-bottom: white solid 1px;
-
-        padding: 1rem;
-        margin: 0;
-      }
-
-      p:last-chilld {
-        border-bottom: none;
-      }
-    }
-
-  }
-
-  h2 {
+  >div:first-child {
     position: absolute;
-    top: -20px;
-    left: 20px;
-    background-color: $color-brown;
-    padding: 5px;
-    z-index: 2;
-    max-width: 16rem;
+    top: -9rem;
+  }
+
+  .activityItem {
+    margin: 40px auto 0px auto;
+    background-color: $color-dark-blue;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    div:nth-child(2) {
+      z-index: 2;
+      max-width: 700px;
+
+
+      div:first-child {
+        padding: 1rem;
+        margin-top: 20px;
+        color: white;
+      }
+
+      div:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+
+      }
+    }
+
+    div:nth-child(3) {
+      z-index: 2;
+      max-width: 700px;
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      padding: 0px 15px;
+
+      div:first-child {
+        border: white solid 1px;
+        border-radius: 3px;
+
+        p {
+          border-bottom: white solid 1px;
+
+          padding: 1rem;
+          margin: 0;
+        }
+
+        p:last-chilld {
+          border-bottom: none;
+        }
+      }
+
+    }
+
+    h2 {
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      background-color: $color-brown;
+      padding: 5px;
+      z-index: 2;
+      max-width: 16rem;
+    }
   }
 }
-
-
 
 @media screen and (min-width: $break-middle) {
   .activityItem {

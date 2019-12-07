@@ -6,48 +6,48 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+	selector: 'app-header',
+	templateUrl: './header.component.html',
+	styleUrls: [ './header.component.scss' ]
 })
 export class HeaderComponent implements OnInit, OnDestroy {
-  deviceFormat: string;
+	deviceFormat: string;
 
-  openLangSelector: boolean;
-  private _unsubscribe$: Subject<void>;
+	openLangSelector: boolean;
+	private _unsubscribe$: Subject<void>;
 
-  constructor(
-    private translate: TranslateService,
-    private _responsiveService: ResponsiveService,
-    public _sideMenuService: SideMenuService
-  ) {}
+	constructor(
+		private translate: TranslateService,
+		private _responsiveService: ResponsiveService,
+		public _sideMenuService: SideMenuService
+	) {}
 
-  ngOnInit() {
-    this._unsubscribe$ = new Subject();
+	ngOnInit() {
+		this._unsubscribe$ = new Subject();
 
-    this.openLangSelector = false;
-    this.onResize();
-    this._responsiveService.checkWidth();
-  }
+		this.openLangSelector = false;
+		this.onResize();
+	}
 
-  useLanguage(event) {
-    this.translate.use(event);
-    localStorage.setItem('lang', event);
-    this.openLangSelector = false;
-  }
+	useLanguage(event) {
+		this.translate.use(event);
+		localStorage.setItem('lang', event);
+		this.openLangSelector = false;
+	}
 
-  onResize() {
-    this._responsiveService.formatStatus
-      .pipe(takeUntil(this._unsubscribe$))
-      .subscribe(deviceFormat => (this.deviceFormat = deviceFormat));
-  }
+	onResize() {
+		this._responsiveService.formatStatus
+			.pipe(takeUntil(this._unsubscribe$))
+			.subscribe((deviceFormat) => (this.deviceFormat = deviceFormat));
+		this._responsiveService.checkWidth();
+	}
 
-  onOpenMobileMenu() {
-    this._sideMenuService.menuStatus = true;
-  }
+	onOpenMobileMenu() {
+		this._sideMenuService.menuStatus = true;
+	}
 
-  ngOnDestroy() {
-    this._unsubscribe$.next();
-    this._unsubscribe$.complete();
-  }
+	ngOnDestroy() {
+		this._unsubscribe$.next();
+		this._unsubscribe$.complete();
+	}
 }
