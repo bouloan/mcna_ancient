@@ -1,6 +1,8 @@
 <article>
+  <div id="{{ activity.title | lowercase | removeWhiteSpace }}">
+  </div>
   <div class="activityItem darkBackground" [ngStyle]="styleImage()">
-    <h2 id="{{ activity.title | lowercase | removeWhiteSpace }}">{{ activity.title }}</h2>
+    <h2>{{ activity.title }}</h2>
     <div>
       <div [innerHTML]="activity.content"></div>
       <div>

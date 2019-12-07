@@ -4,9 +4,7 @@
       <h1>{{ activity.title}}</h1>
       <p [innerHTML]="activity.resume"></p>
       <div>
-        <button *ngIf="activity.type ==='course'" [routerLink]="['/courses']"
-          fragment="{{activity.title | removeWhiteSpace |lowercase}}">{{'button.know-more' | translate}}</button>
-        <button *ngIf="activity.type ==='interpreting'" [routerLink]="['/interpretings']"
+        <button [routerLink]="activity.type ==='course' ? ['/courses']:['/interpretings']"
           fragment="{{activity.title | removeWhiteSpace |lowercase}}">{{'button.know-more' | translate}}</button>
         <a class="button"
           href="mailto: mcna.aquitaine@gmail.com?subject=Demande%20d'inscription">{{'button.register' | translate}}</a>

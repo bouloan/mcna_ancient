@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mcna.fr/sitemap.xml
