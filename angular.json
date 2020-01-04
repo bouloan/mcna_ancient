@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "maison-chine": {
+    "mcna": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/maison-chine",
+            "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,6 @@
               "src/assets",
               "src/.htaccess"
             ],
-
             "styles": [
               "src/assets/scss/styles.scss"
             ],
@@ -54,18 +53,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "maison-chine:build"
+            "browserTarget": "mcna:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "maison-chine:build:production"
+              "browserTarget": "mcna:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "maison-chine:build"
+            "browserTarget": "mcna:build"
           }
         },
         "test": {
@@ -96,10 +95,33 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "src/tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "sourceMap": false,
+              "optimization": {
+                "scripts": false,
+                "styles": true
+              }
+            }
+          }
         }
       }
     },
-    "maison-chine-e2e": {
+    "mcna-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -107,11 +129,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "maison-chine:serve"
+            "devServerTarget": "mcna:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "maison-chine:serve:production"
+              "devServerTarget": "mcna:serve:production"
             }
           }
         },
@@ -127,5 +149,5 @@
       }
     }
   },
-  "defaultProject": "maison-chine"
+  "defaultProject": "mcna"
 }

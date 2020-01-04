@@ -37,7 +37,7 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     SharedModule,
     NgbModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,

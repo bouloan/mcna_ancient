@@ -1,24 +1,24 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Activity } from '@models/activity.model';
+import { Activity } from 'src/app/shared/interfaces/activity.interface';
 
 @Component({
-  selector: 'app-service-item',
-  templateUrl: './service-item.component.html',
-  styleUrls: ['./service-item.component.scss']
+	selector: 'app-service-item',
+	templateUrl: './service-item.component.html',
+	styleUrls: [ './service-item.component.scss' ]
 })
 export class ServiceItemComponent implements OnInit {
-  @Input() activity: Activity;
-  @Input() index: number;
-  @Input() image: string;
+	@Input() activity: Activity;
+	@Input() index: number;
+	@Input() image: string;
 
-  constructor() {}
+	constructor() {}
 
-  ngOnInit() {}
+	ngOnInit() {}
 
-  styleImage(): Object {
-    return {
-      background: 'url(' + this.image + ') no-repeat center center ',
-      backgroundSize: 'cover'
-    };
-  }
+	styleImage(): Object {
+		return {
+			background: 'url(' + this.image + ') no-repeat center center ',
+			backgroundSize: 'cover'
+		};
+	}
 }
