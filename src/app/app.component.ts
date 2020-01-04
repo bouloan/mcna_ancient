@@ -71,7 +71,7 @@ export class AppComponent implements OnInit, OnDestroy {
 		if (isPlatformBrowser(this._platformId)) {
 			if (!localStorage.getItem('lang')) {
 				browserLang = this._translate.getBrowserLang();
-				//if browserlanguage is not in chinese, the selected language will be french
+				// if browserlanguage is not in chinese, the selected language will be french
 				if (browserLang !== 'zh-CN') {
 					browserLang = 'fr';
 				}

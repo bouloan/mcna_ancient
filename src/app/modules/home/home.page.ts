@@ -1,9 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { Activity } from '@models/activity.model';
 import { TranslateService } from '@ngx-translate/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { Activity } from 'src/app/shared/interfaces/activity.interface';
 
 @Component({
 	selector: 'app-home',
@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 			});
 	}
 
-	public setTitle(newTitle: string) {
+	setTitle(newTitle: string) {
 		this._title.setTitle(newTitle);
 	}
 

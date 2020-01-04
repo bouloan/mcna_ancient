@@ -11,7 +11,10 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod && ng run maison-chine:server:production --bundleDependencies all"
+    "build:client-and-server-bundles": "ng build --prod && ng run maison-chine:server:production --bundleDependencies all",
+    "prerender": "./node_modules/.bin/ts-node ./prerender.ts",
+    "start: heroku": "node dist / server",
+    "postinstall": "npm run build: ssr"
   },
   "private": true,
   "dependencies": {
@@ -28,7 +31,7 @@
     "@angular/router": "^8.2.2",
     "@ng-bootstrap/ng-bootstrap": "^4.2.1",
     "@nguniversal/express-engine": "^8.1.1",
-    "@nguniversal/module-map-ngfactory-loader": "8.1.1",
+    "@nguniversal/module-map-ngfactory-loader": "^8.1.1",
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
     "bootstrap": "^4.3.1",

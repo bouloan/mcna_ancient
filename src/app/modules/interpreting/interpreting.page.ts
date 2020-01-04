@@ -1,10 +1,10 @@
 import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-import { Activity } from '@models/activity.model';
 import { TranslateService } from '@ngx-translate/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { Activity } from 'src/app/shared/interfaces/activity.interface';
 
 @Component({
 	selector: 'app-interpreting',
@@ -48,9 +48,11 @@ export class InterpretingPage implements OnInit, AfterViewInit, OnDestroy {
 			.stream('activities')
 			.pipe(takeUntil(this._unsubscribe$))
 			.subscribe((r) => {
-				this.interpretingList = r.filter((activity) => {
-					return activity.type === 'interpreting';
-				});
+				if (r !== 'activities') {
+					this.interpretingList = r.filter((activity) => {
+						return activity.type === 'interpreting';
+					});
+				}
 			});
 	}
 
@@ -60,7 +62,7 @@ export class InterpretingPage implements OnInit, AfterViewInit, OnDestroy {
 		} catch (e) {}
 	}
 
-	public setTitle(newTitle: string) {
+	setTitle(newTitle: string) {
 		this._title.setTitle(newTitle);
 	}
 
